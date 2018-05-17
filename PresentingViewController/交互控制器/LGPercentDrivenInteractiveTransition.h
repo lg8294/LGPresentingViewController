@@ -10,4 +10,6 @@
 
 @interface LGPercentDrivenInteractiveTransition : UIPercentDrivenInteractiveTransition
 
+- (IBAction)handleSwipeUpdate:(UIPanGestureRecognizer *)sender;
+
 @end

@@ -15,8 +15,6 @@
 		CBEE74F720AD141B0054A1DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE74F620AD141B0054A1DE /* main.m */; };
 		CBEE74FF20AD14310054A1DE /* LGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE74FE20AD14310054A1DE /* LGViewController.m */; };
 		CBEE750220AD1C9A0054A1DE /* LGViewControllerTransitioningDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE750120AD1C9A0054A1DE /* LGViewControllerTransitioningDelegate.m */; };
-		CBEE752820AD1FB00054A1DE /* LGPopAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE752420AD1FB00054A1DE /* LGPopAnimatedTransitioning.m */; };
-		CBEE752920AD1FB00054A1DE /* LGPushAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE752720AD1FB00054A1DE /* LGPushAnimatedTransitioning.m */; };
 		CBEE752C20AD540B0054A1DE /* LGPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE752B20AD540B0054A1DE /* LGPercentDrivenInteractiveTransition.m */; };
 		CBEE752F20AD69A80054A1DE /* LGPresentingAnimatedController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE752E20AD69A80054A1DE /* LGPresentingAnimatedController.m */; };
 		CBEE753320AD6F1A0054A1DE /* LGDismissalAnimatedController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE753220AD6F1A0054A1DE /* LGDismissalAnimatedController.m */; };
@@ -37,10 +35,6 @@
 		CBEE74FE20AD14310054A1DE /* LGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGViewController.m; sourceTree = "<group>"; };
 		CBEE750020AD1C9A0054A1DE /* LGViewControllerTransitioningDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGViewControllerTransitioningDelegate.h; sourceTree = "<group>"; };
 		CBEE750120AD1C9A0054A1DE /* LGViewControllerTransitioningDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGViewControllerTransitioningDelegate.m; sourceTree = "<group>"; };
-		CBEE752420AD1FB00054A1DE /* LGPopAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPopAnimatedTransitioning.m; sourceTree = "<group>"; };
-		CBEE752520AD1FB00054A1DE /* LGPushAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPushAnimatedTransitioning.h; sourceTree = "<group>"; };
-		CBEE752620AD1FB00054A1DE /* LGPopAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPopAnimatedTransitioning.h; sourceTree = "<group>"; };
-		CBEE752720AD1FB00054A1DE /* LGPushAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPushAnimatedTransitioning.m; sourceTree = "<group>"; };
 		CBEE752A20AD540B0054A1DE /* LGPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
 		CBEE752B20AD540B0054A1DE /* LGPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
 		CBEE752D20AD69A80054A1DE /* LGPresentingAnimatedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGPresentingAnimatedController.h; sourceTree = "<group>"; };
@@ -100,10 +94,6 @@
 		CBEE752320AD1FB00054A1DE /* 动画控制器 */ = {
 			isa = PBXGroup;
 			children = (
-				CBEE752520AD1FB00054A1DE /* LGPushAnimatedTransitioning.h */,
-				CBEE752720AD1FB00054A1DE /* LGPushAnimatedTransitioning.m */,
-				CBEE752620AD1FB00054A1DE /* LGPopAnimatedTransitioning.h */,
-				CBEE752420AD1FB00054A1DE /* LGPopAnimatedTransitioning.m */,
 				CBEE752D20AD69A80054A1DE /* LGPresentingAnimatedController.h */,
 				CBEE752E20AD69A80054A1DE /* LGPresentingAnimatedController.m */,
 				CBEE753120AD6F1A0054A1DE /* LGDismissalAnimatedController.h */,
@@ -204,9 +194,7 @@
 				CBEE750220AD1C9A0054A1DE /* LGViewControllerTransitioningDelegate.m in Sources */,
 				CBEE74F720AD141B0054A1DE /* main.m in Sources */,
 				CBEE753320AD6F1A0054A1DE /* LGDismissalAnimatedController.m in Sources */,
-				CBEE752920AD1FB00054A1DE /* LGPushAnimatedTransitioning.m in Sources */,
 				CBEE752F20AD69A80054A1DE /* LGPresentingAnimatedController.m in Sources */,
-				CBEE752820AD1FB00054A1DE /* LGPopAnimatedTransitioning.m in Sources */,
 				CBEE74E920AD141A0054A1DE /* AppDelegate.m in Sources */,
 				CBEE752C20AD540B0054A1DE /* LGPercentDrivenInteractiveTransition.m in Sources */,
 				CBEE74FF20AD14310054A1DE /* LGViewController.m in Sources */,

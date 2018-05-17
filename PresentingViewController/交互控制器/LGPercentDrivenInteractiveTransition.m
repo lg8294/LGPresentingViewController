@@ -24,13 +24,13 @@
     // 保存引用，以便后面使用
     self.contextData = transitionContext;
     
-    // 创建一个 pan 手势
-    self.panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeUpdate:)];
-    self.panGesture.maximumNumberOfTouches = 1;
-    
-    // 添加手势到 container view.
-    UIView *container = [transitionContext containerView];
-    [container addGestureRecognizer:self.panGesture];
+//    // 创建一个 pan 手势
+//    self.panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeUpdate:)];
+//    self.panGesture.maximumNumberOfTouches = 1;
+//
+//    // 添加手势到 container view.
+//    UIView *container = [transitionContext containerView];
+//    [container addGestureRecognizer:self.panGesture];
 }
 
 #pragma mark - handle
@@ -40,6 +40,7 @@
     
     if (sender.state == UIGestureRecognizerStateBegan) {
         // 设置手势开始时的 translation
+        
         [self.panGesture setTranslation:CGPointMake(0, 0) inView:container];
     } else if (sender.state == UIGestureRecognizerStateChanged) {
         // 获取当前的 translation
