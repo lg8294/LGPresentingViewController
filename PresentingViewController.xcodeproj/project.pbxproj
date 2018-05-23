@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB49C74420B51454004640C5 /* Discription in Resources */ = {isa = PBXBuildFile; fileRef = CB49C74320B51454004640C5 /* Discription */; };
 		CBEE74E920AD141A0054A1DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE74E820AD141A0054A1DE /* AppDelegate.m */; };
 		CBEE74EC20AD141A0054A1DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE74EB20AD141A0054A1DE /* ViewController.m */; };
 		CBEE74EF20AD141A0054A1DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEE74ED20AD141A0054A1DE /* Main.storyboard */; };
@@ -15,12 +16,12 @@
 		CBEE74F720AD141B0054A1DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE74F620AD141B0054A1DE /* main.m */; };
 		CBEE74FF20AD14310054A1DE /* LGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE74FE20AD14310054A1DE /* LGViewController.m */; };
 		CBEE750220AD1C9A0054A1DE /* LGViewControllerTransitioningDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE750120AD1C9A0054A1DE /* LGViewControllerTransitioningDelegate.m */; };
-		CBEE752C20AD540B0054A1DE /* LGPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE752B20AD540B0054A1DE /* LGPercentDrivenInteractiveTransition.m */; };
 		CBEE752F20AD69A80054A1DE /* LGPresentingAnimatedController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE752E20AD69A80054A1DE /* LGPresentingAnimatedController.m */; };
 		CBEE753320AD6F1A0054A1DE /* LGDismissalAnimatedController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE753220AD6F1A0054A1DE /* LGDismissalAnimatedController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB49C74320B51454004640C5 /* Discription */ = {isa = PBXFileReference; lastKnownFileType = text; path = Discription; sourceTree = "<group>"; };
 		CBEE74E420AD141A0054A1DE /* PresentingViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresentingViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEE74E720AD141A0054A1DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CBEE74E820AD141A0054A1DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,8 +36,6 @@
 		CBEE74FE20AD14310054A1DE /* LGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGViewController.m; sourceTree = "<group>"; };
 		CBEE750020AD1C9A0054A1DE /* LGViewControllerTransitioningDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGViewControllerTransitioningDelegate.h; sourceTree = "<group>"; };
 		CBEE750120AD1C9A0054A1DE /* LGViewControllerTransitioningDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGViewControllerTransitioningDelegate.m; sourceTree = "<group>"; };
-		CBEE752A20AD540B0054A1DE /* LGPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
-		CBEE752B20AD540B0054A1DE /* LGPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
 		CBEE752D20AD69A80054A1DE /* LGPresentingAnimatedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGPresentingAnimatedController.h; sourceTree = "<group>"; };
 		CBEE752E20AD69A80054A1DE /* LGPresentingAnimatedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGPresentingAnimatedController.m; sourceTree = "<group>"; };
 		CBEE753120AD6F1A0054A1DE /* LGDismissalAnimatedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGDismissalAnimatedController.h; sourceTree = "<group>"; };
@@ -73,7 +72,7 @@
 		CBEE74E620AD141A0054A1DE /* PresentingViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CBEE753820AD90770054A1DE /* 转场代理 */,
+				CBEE753820AD90770054A1DE /* 转场控制器 */,
 				CBEE753020AD6AE40054A1DE /* 交互控制器 */,
 				CBEE752320AD1FB00054A1DE /* 动画控制器 */,
 				CBEE74E720AD141A0054A1DE /* AppDelegate.h */,
@@ -105,19 +104,18 @@
 		CBEE753020AD6AE40054A1DE /* 交互控制器 */ = {
 			isa = PBXGroup;
 			children = (
-				CBEE752A20AD540B0054A1DE /* LGPercentDrivenInteractiveTransition.h */,
-				CBEE752B20AD540B0054A1DE /* LGPercentDrivenInteractiveTransition.m */,
+				CB49C74320B51454004640C5 /* Discription */,
 			);
 			path = "交互控制器";
 			sourceTree = "<group>";
 		};
-		CBEE753820AD90770054A1DE /* 转场代理 */ = {
+		CBEE753820AD90770054A1DE /* 转场控制器 */ = {
 			isa = PBXGroup;
 			children = (
 				CBEE750020AD1C9A0054A1DE /* LGViewControllerTransitioningDelegate.h */,
 				CBEE750120AD1C9A0054A1DE /* LGViewControllerTransitioningDelegate.m */,
 			);
-			path = "转场代理";
+			path = "转场控制器";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +178,7 @@
 				CBEE74F420AD141B0054A1DE /* LaunchScreen.storyboard in Resources */,
 				CBEE74F120AD141B0054A1DE /* Assets.xcassets in Resources */,
 				CBEE74EF20AD141A0054A1DE /* Main.storyboard in Resources */,
+				CB49C74420B51454004640C5 /* Discription in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +195,6 @@
 				CBEE753320AD6F1A0054A1DE /* LGDismissalAnimatedController.m in Sources */,
 				CBEE752F20AD69A80054A1DE /* LGPresentingAnimatedController.m in Sources */,
 				CBEE74E920AD141A0054A1DE /* AppDelegate.m in Sources */,
-				CBEE752C20AD540B0054A1DE /* LGPercentDrivenInteractiveTransition.m in Sources */,
 				CBEE74FF20AD14310054A1DE /* LGViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

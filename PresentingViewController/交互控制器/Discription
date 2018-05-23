@@ -1,0 +1,1 @@
+交互控制器不需要自定义，使用 UIKit 自带的 UIPercentDrivenInteractiveTransition 基本就够用了。

@@ -11,4 +11,6 @@
 
 @interface LGViewControllerTransitioningDelegate : NSObject <UIViewControllerTransitioningDelegate>
 
+- (void)setupViewController:(UIViewController *)viewController;
+
 @end
