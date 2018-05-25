@@ -58,6 +58,7 @@
 
 - (IBAction)presenttingVC5:(id)sender {
     LGViewController *vc = [[LGViewController alloc] init];
+    vc.view.backgroundColor = [UIColor colorWithWhite:0 alpha:.4];
     [self.vcTransitioningDelegate setupViewController:vc];
     
     [self presentViewController:vc animated:YES completion:nil];
@@ -65,8 +66,28 @@
 
 - (IBAction)presenttingVC6:(id)sender {
     LGViewController *vc = [[LGViewController alloc] init];
+    vc.view.backgroundColor = [UIColor colorWithWhite:0 alpha:.4];
     [vc setModalPresentationStyle:UIModalPresentationCustom];
-//    [vc setTransitioningDelegate:self.vcTransitioningDelegate];
+    // UIModalPresentationCustom 类型下，最终的 presented view 可以不是全屏
+    [self.vcTransitioningDelegate setupViewController:vc];
+    
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+- (IBAction)presenttingVC7:(id)sender {
+    LGViewController *vc = [[LGViewController alloc] init];
+    vc.view.backgroundColor = [UIColor colorWithWhite:0 alpha:.4];
+    [vc setModalPresentationStyle:UIModalPresentationOverCurrentContext];
+    [self.vcTransitioningDelegate setupViewController:vc];
+    
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+- (IBAction)presenttingVC8:(id)sender {
+    LGViewController *vc = [[LGViewController alloc] init];
+    vc.view.backgroundColor = [UIColor colorWithWhite:0 alpha:.4];
+    [vc setModalPresentationStyle:UIModalPresentationOverFullScreen];
+    // 在 iPhone 上 UIModalPresentationOverFullScreen，，UIModalPresentationOverCurrentContext 三个效果相同，主要体现在模态视图显示之后，presenting view 不会从 Window 上移除
     [self.vcTransitioningDelegate setupViewController:vc];
     
     [self presentViewController:vc animated:YES completion:nil];
