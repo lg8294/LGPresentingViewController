@@ -93,4 +93,24 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
+- (IBAction)presenttingVC9:(id)sender {
+    LGViewController *vc = [[LGViewController alloc] init];
+    vc.view.backgroundColor = [UIColor colorWithWhite:0 alpha:.4];
+    [vc setModalPresentationStyle:UIModalPresentationPopover];
+
+    [self.vcTransitioningDelegate setupViewController:vc];
+    
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+- (IBAction)presenttingVC10:(id)sender {
+//    LGViewController *vc = [[LGViewController alloc] init];
+//    vc.view.backgroundColor = [UIColor colorWithWhite:0 alpha:.4];
+//    [vc setModalPresentationStyle:UIModalPresentationBlurOverFullScreen];
+//
+//    [self.vcTransitioningDelegate setupViewController:vc];
+//    
+//    [self presentViewController:vc animated:YES completion:nil];
+}
+
 @end
