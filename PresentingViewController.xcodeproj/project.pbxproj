@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CB49C74420B51454004640C5 /* Discription in Resources */ = {isa = PBXBuildFile; fileRef = CB49C74320B51454004640C5 /* Discription */; };
+		CB61622C2365D74D0012C1FD /* LGModalStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = CB61622B2365D74D0012C1FD /* LGModalStyle.m */; };
+		CBE19389236DC54100B31894 /* LGModalTransitionStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE19388236DC54100B31894 /* LGModalTransitionStyle.m */; };
 		CBEE74E920AD141A0054A1DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE74E820AD141A0054A1DE /* AppDelegate.m */; };
 		CBEE74EC20AD141A0054A1DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE74EB20AD141A0054A1DE /* ViewController.m */; };
 		CBEE74EF20AD141A0054A1DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEE74ED20AD141A0054A1DE /* Main.storyboard */; };
@@ -22,6 +24,10 @@
 
 /* Begin PBXFileReference section */
 		CB49C74320B51454004640C5 /* Discription */ = {isa = PBXFileReference; lastKnownFileType = text; path = Discription; sourceTree = "<group>"; };
+		CB61622A2365D74D0012C1FD /* LGModalStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGModalStyle.h; sourceTree = "<group>"; };
+		CB61622B2365D74D0012C1FD /* LGModalStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGModalStyle.m; sourceTree = "<group>"; };
+		CBE19387236DC54100B31894 /* LGModalTransitionStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGModalTransitionStyle.h; sourceTree = "<group>"; };
+		CBE19388236DC54100B31894 /* LGModalTransitionStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGModalTransitionStyle.m; sourceTree = "<group>"; };
 		CBEE74E420AD141A0054A1DE /* PresentingViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresentingViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEE74E720AD141A0054A1DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CBEE74E820AD141A0054A1DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -86,6 +92,10 @@
 				CBEE74F620AD141B0054A1DE /* main.m */,
 				CBEE74FD20AD14310054A1DE /* LGViewController.h */,
 				CBEE74FE20AD14310054A1DE /* LGViewController.m */,
+				CB61622A2365D74D0012C1FD /* LGModalStyle.h */,
+				CB61622B2365D74D0012C1FD /* LGModalStyle.m */,
+				CBE19387236DC54100B31894 /* LGModalTransitionStyle.h */,
+				CBE19388236DC54100B31894 /* LGModalTransitionStyle.m */,
 			);
 			path = PresentingViewController;
 			sourceTree = "<group>";
@@ -191,7 +201,9 @@
 			files = (
 				CBEE74EC20AD141A0054A1DE /* ViewController.m in Sources */,
 				CBEE750220AD1C9A0054A1DE /* LGViewControllerTransitioningDelegate.m in Sources */,
+				CB61622C2365D74D0012C1FD /* LGModalStyle.m in Sources */,
 				CBEE74F720AD141B0054A1DE /* main.m in Sources */,
+				CBE19389236DC54100B31894 /* LGModalTransitionStyle.m in Sources */,
 				CBEE753320AD6F1A0054A1DE /* LGDismissalAnimatedController.m in Sources */,
 				CBEE752F20AD69A80054A1DE /* LGPresentingAnimatedController.m in Sources */,
 				CBEE74E920AD141A0054A1DE /* AppDelegate.m in Sources */,
