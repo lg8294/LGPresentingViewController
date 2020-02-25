@@ -26,6 +26,7 @@
 		CB49C74320B51454004640C5 /* Discription */ = {isa = PBXFileReference; lastKnownFileType = text; path = Discription; sourceTree = "<group>"; };
 		CB61622A2365D74D0012C1FD /* LGModalStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGModalStyle.h; sourceTree = "<group>"; };
 		CB61622B2365D74D0012C1FD /* LGModalStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGModalStyle.m; sourceTree = "<group>"; };
+		CB688D91240512BF002A7417 /* README.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
 		CBE19387236DC54100B31894 /* LGModalTransitionStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGModalTransitionStyle.h; sourceTree = "<group>"; };
 		CBE19388236DC54100B31894 /* LGModalTransitionStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGModalTransitionStyle.m; sourceTree = "<group>"; };
 		CBEE74E420AD141A0054A1DE /* PresentingViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresentingViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +63,7 @@
 		CBEE74DB20AD141A0054A1DE = {
 			isa = PBXGroup;
 			children = (
+				CB688D91240512BF002A7417 /* README.MD */,
 				CBEE74E620AD141A0054A1DE /* PresentingViewController */,
 				CBEE74E520AD141A0054A1DE /* Products */,
 			);

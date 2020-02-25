@@ -35,20 +35,25 @@
 
 #pragma mark -
 - (void)initDatas {
-    // 在 iPhone 上 UIModalPresentationOverFullScreen，，UIModalPresentationOverCurrentContext 三个效果相同，主要体现在模态视图显示之后，presenting view 不会从 Window 上移除
+    // 在 iPhone 上 UIModalPresentationOverFullScreen，UIModalPresentationCurrentContext，UIModalPresentationOverCurrentContext 效果相同，presenting view 不会从 Window 上移除。UIModalPresentationCurrentContext 要结合 setDefinesPresentationContext 使用。
     // UIModalPresentationCustom 类型， presented view 可以不是全屏，presenting view 不会从 Window 上移除
     NSMutableArray<LGModalStyle *> *pStyles = [@[] mutableCopy];
-    NSArray *styles = @[@(UIModalPresentationAutomatic),
-                        @(UIModalPresentationOverCurrentContext),
-                        @(UIModalPresentationOverFullScreen),
-                        @(UIModalPresentationCurrentContext),
-                        @(UIModalPresentationFullScreen),
-                        @(UIModalPresentationPageSheet),
-                        @(UIModalPresentationCustom),
-                        @(UIModalPresentationFormSheet),
-                        @(UIModalPresentationPopover),
-                        @(UIModalPresentationNone),
-    ];
+    NSMutableArray *styles = [@[
+        @(UIModalPresentationOverCurrentContext),
+        @(UIModalPresentationOverFullScreen),
+        @(UIModalPresentationCurrentContext),//结合 setDefinesPresentationContext 使用
+        @(UIModalPresentationFullScreen),
+        @(UIModalPresentationPageSheet),
+        @(UIModalPresentationCustom),
+        @(UIModalPresentationFormSheet),
+        @(UIModalPresentationPopover),
+        @(UIModalPresentationNone),
+    ] mutableCopy];
+    if (@available(iOS 13.0, *)) {
+        [styles addObject:@(UIModalPresentationAutomatic)];
+//        [styles insertObject:@(UIModalPresentationAutomatic) atIndex:0];
+    } else {
+    }
     for (NSNumber *value in styles) {
         LGModalStyle *item = [[LGModalStyle alloc] initWithStyle:(UIModalPresentationStyle)value.integerValue];
         [pStyles addObject:item];
